@@ -1,0 +1,407 @@
+@media (max-width: 599px) {
+  .header-primary {
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 25px;
+  }
+
+  #menu-hamburguer {
+    display: block;
+    z-index: 1001;
+    background: transparent;
+    border: none;
+  }
+
+  #nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(40px) saturate(160%) brightness(1.05);
+    -webkit-backdrop-filter: blur(40px) saturate(160%) brightness(1.05);
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.4s ease;
+    flex-direction: column;
+    z-index: 1000;
+    margin-left: 0;
+  }
+
+  #nav.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .header-primary ul {
+    flex-direction: column;
+    gap: 35px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    height: 0;
+    width: 0;
+    margin-top: 100px;
+  }
+
+  .header-primary ul li a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  #nav > div {
+    margin-top: 45px;
+  }
+
+  #nav #login {
+    background-color: var(--color-highlight);
+    color: var(--color-dark);
+    margin-top: 80px;
+  }
+
+  .header-primary img {
+    position: relative;
+    z-index: 1002;
+  }
+
+  #menu-hamburguer img {
+    width: 45px;
+    height: auto;
+  }
+
+  .header-primary ul li a.active {
+    color: var(--color-highlight);
+  }
+
+  .header-primary ul li a.active::before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-highlight);
+    box-shadow: 0 0 8px var(--color-highlight);
+    opacity: 0.9;
+  }
+
+  /*Footer*/
+
+footer img {
+  width: 90%;
+}
+
+footer p {
+  color: var(--color-bg);
+  font-size: 1rem;
+}
+
+  /*top-hero-index*/
+  #wrapper {
+    padding: 24px;
+  }
+
+  .top-hero-index {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    place-items: center;
+  }
+
+  .hero-title-index {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .hero-title-index::after {
+    top: auto;
+    bottom: 0;
+    left: 40%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 250px;
+    opacity: 0.3;
+  }
+
+  .hero-title-index h1 {
+    font-size: 1.875rem; /* 30px */
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-title-index a {
+    width: 100%;
+    max-width: 280px;
+    margin: 40px auto 0 auto;
+    font-size: 1rem;
+  }
+
+  .hero-information-index {
+    align-items: center;
+    gap: 24px;
+  }
+
+  .hero-information-index .information-container {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    padding: 16px;
+  }
+
+  .hero-information-index .information-container p {
+    font-size: 0.9375rem;
+    text-align: center;
+  }
+
+  .video-pitch {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    padding: 16px;
+  }
+
+  .video-pitch::after {
+    display: none;
+  }
+
+  .video-pitch p {
+    font-size: 0.9375rem;
+    text-align: center;
+  }
+
+  .video-pitch a {
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  .img-top-hero-index {
+    display: none;
+  }
+
+  /*Trilha Exemplo Plataforma*/
+  .trail-index {
+    padding: 60px 0;
+  }
+
+  #estude-empregos-do-futuro {
+    font-family: var(--font-title);
+    font-size: clamp(2rem, 8vw, 3rem);
+    max-width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  #estude-empregos-do-futuro span {
+    color: var(--color-primary);
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .track-card-index {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    align-items: start;
+    justify-items: center;
+  }
+
+  .card-blue-index,
+  .card-pink-index {
+    width: 100%;
+    max-width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 40px;
+    text-align: left;
+  }
+
+  .card-blue-index span,
+  .card-pink-index span {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .card-blue-index p,
+  .card-pink-index p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  .card-blue-index {
+    background-color: var(--color-accent);
+  }
+
+  .card-pink-index {
+    background-color: var(--color-secondary);
+  }
+
+
+  /* cultura organizacional */
+  .culture {
+    flex-direction: column;
+    height: auto; 
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .culture img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 300px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  .summary-culture {
+    margin: 0;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .summary-culture details {
+    padding-bottom: 8px;
+  }
+
+  .summary-culture summary {
+    font-size: clamp(1.5rem, 5vw, 2rem); 
+    grid-template-columns: 28px 1fr; 
+    gap: 0;
+    gap: 120px;
+    align-items: center; 
+    padding-bottom: 5px;
+  }
+
+  .summary-culture p {
+    width: 100%;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .summary-culture summary img {
+    width: 24px;
+    height: 24px;
+  }
+
+   /* Estrutura principal */
+  .mockup-index {
+    margin: 100px 0;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .mockup-index img {
+    width: 100%;
+    height: auto;
+  }
+
+  .mockup-index h2 {
+    font-size: clamp(2rem, 7vw, 2.5rem);
+    margin-bottom: 10px;
+  }
+
+  .mockup-index h2 span {
+    font-size: clamp(2rem, 7vw, 2.5rem);
+  }
+
+   .list-skills-index ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .list-skills-index ul li {
+    color: var(--color-bg);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .list-skills-index ul li:nth-child(1) {
+    background: var(--color-accent);
+  }
+
+  .list-skills-index ul li:nth-child(2) {
+    background: var(--color-highlight);
+    color: var(--color-dark);
+  }
+
+  .list-skills-index ul li:nth-child(3) {
+    background: var(--color-secondary);
+  }
+
+  .list-skills-index ul li:nth-child(4) {
+    background: var(--color-primary);
+  }
+
+
+  .list-skills-index ul li:hover {
+    transform: scale(1.04);
+  }
+
+  /*cta-index*/
+   .cta-index {
+    padding: 50px 20px;
+    border-radius: 20px;
+    gap: 40px;
+  }
+
+  .cta-index h2 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  .cta-index h2 span {
+    font-size: 2.4rem;
+  }
+
+  .cta-index p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    width: 100%;
+    max-width: 340px;
+    text-align: center;
+  }
+
+  .cta-index a {
+    width: 100%;
+    max-width: 280px;
+    height: 42px;
+    font-size: 0.95rem;
+    border-radius: 14px;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .cta-index a:hover {
+    transform: scale(1.03);
+    border-width: 1.5px;
+  }
+}
