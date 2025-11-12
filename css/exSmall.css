@@ -628,7 +628,7 @@
     margin: 0 auto;
   }
 
-  .containers-cta-about div:nth-child(3){
+  .containers-cta-about div:nth-child(3) {
     max-width: 100%;
   }
 
@@ -663,13 +663,13 @@
 
   /*Página FAQ*/
   /*top hero faq*/
-   .top-hero-faq {
+  .top-hero-faq {
     padding: 80px 20px;
     text-align: center;
   }
 
   .top-hero-faq h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     line-height: 1.1;
     font-family: var(--font-title);
     color: var(--color-bg);
@@ -698,7 +698,7 @@
   }
 
   /*Secção de Faq*/
-   .question-faq h2 {
+  .question-faq h2 {
     font-size: 1.75rem;
     width: 90%;
     margin: 40px auto;
@@ -748,5 +748,128 @@
     width: 20px;
     height: 20px;
     transition: transform 0.3s ease;
+  }
+
+  /*Página de Contato*/
+  /*top-hero-contact*/
+  .top-hero-contact {
+    padding-bottom: 40px;
+    text-align: start;
+  }
+
+  .top-hero-contact h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+    padding: 0 20px;
+    margin-bottom: 15px;  
+  }
+
+  .top-hero-contact p {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  /*quiz-contact*/
+  .quiz {
+    padding: 30px 15px;
+  }
+
+  #quiz-form {
+    padding: 25px 20px;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    max-width: 100%;
+  }
+
+  .quiz-item {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+  }
+
+  .quiz-item legend {
+    font-size: 1.125rem;
+    text-align: left;
+    line-height: 1.4;
+  }
+
+  .label-select {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.95rem;
+  }
+
+  .options {
+    gap: 10px;
+  }
+
+  .options label {
+    font-size: 0.9rem;
+    padding: 10px;
+    text-align: left;
+  }
+
+  textarea {
+    font-size: 0.95rem;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .btn-submit {
+    font-size: 1rem;
+    padding: 12px 0;
+    border-radius: 10px;
+    margin-top: 25px;
+  }
+
+  .btn-submit img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /*form-contact*/
+    .get-in-touch-contact h2 {
+    padding: 60px 0 40px;
+    font-size: 2.2rem;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .grid-contact {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 30px;
+  }
+
+  .grid-contact img {
+    display: none;
+  }
+
+  .grid-contact div {
+    width: 90%;
+    padding: 25px 20px;
+    max-width: none;
+    border-radius: 20px;
+  }
+
+  .grid-contact div form label {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .grid-contact div form input,
+  .grid-contact div form textarea {
+    font-size: 0.95rem;
+  }
+
+  .grid-contact div form button {
+    width: 100%;
+    height: 42px;
+    font-size: 1rem;
+    border-radius: 15px;
   }
 }

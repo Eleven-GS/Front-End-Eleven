@@ -529,7 +529,7 @@ footer p {
   text-align: center;
   background: var(--color-accent);
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
 }
 
@@ -663,13 +663,11 @@ footer p {
   padding: 8px 0;
   border: 1px solid var(--color-dark);
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
 }
 
 .top-hero-about a:hover {
   transform: translateY(-5px);
-  box-shadow: rgba(255, 255, 255, 0.15);
 }
 
 /*background da pág*/
@@ -837,7 +835,7 @@ footer p {
   border-radius: 25px;
   place-content: center;
   transition: all 0.3s ease;
-  box-shadow: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 .cards-history-about div:hover {
@@ -912,7 +910,7 @@ footer p {
   border-radius: 25px;
   display: flex;
   place-items: center;
-  box-shadow: rgba(0, 0, 0, 0.18);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
 }
 
 .containers-cta-about div:nth-child(2) {
@@ -925,7 +923,7 @@ footer p {
   place-items: center;
   margin-left: 600px;
   margin-top: -60px;
-  box-shadow: rgba(0, 0, 0, 0.18);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
 }
 
 .containers-cta-about div p {
@@ -1016,13 +1014,13 @@ footer p {
   transition: all 0.3s ease;
   display: block;
   align-content: center;
-  box-shadow: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
 .question-faq div details:hover{
   background-color: var(--color-highlight);
   transform: scale(1.03);
-  box-shadow: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .question-faq div summary{
@@ -1036,3 +1034,272 @@ footer p {
 .question-faq div summary img{
   cursor: pointer;
 }
+
+/*Página de Contato*/
+/*top-hero-contact*/
+.top-hero-contact h1{
+  font-family: var(--font-title);
+  font-size: 4rem;
+  margin-bottom: 20px;
+  max-width: 1060px;
+}
+
+.top-hero-contact p{
+  font-size: 1.25rem;
+  font-weight: 500;
+  max-width: 1060px;
+}
+
+/*quiz-contact*/
+.quiz {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+#quiz-form {
+  background: var(--color-bg);
+  border-radius: 25px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  width: 100%;
+  max-width: 950px;
+}
+
+.quiz-item {
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+}
+
+.quiz-item legend {
+  font-family: var(--font-title);
+  font-size: 1.4rem;
+  color: var(--color-dark);
+  margin-bottom: 10px;
+}
+
+.label-select {
+  display: flex;
+  gap: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.toggle {
+  display: none;
+}
+
+.options {
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+  animation: fadeIn 0.3s ease;
+}
+
+.options.active {
+  display: flex;
+}
+
+.toggle:checked ~ .options {
+  display: flex;
+}
+
+.options label {
+  background-color: var(--color-bg);
+  border: 1.8px solid var(--color-primary);
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 0.95rem;
+  color: var(--color-neutral);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.options label:hover,
+.options input[type="checkbox"]:focus + label {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.options input[type="checkbox"] {
+  accent-color: var(--color-accent);
+  margin-right: 10px;
+  transform: scale(1.1);
+}
+
+.quiz-item textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid var(--color-primary);
+  padding: 12px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  resize: none;
+  background-color: var(--color-bg);
+  color: var(--color-dark);
+  transition: 0.3s;
+}
+
+.quiz-item textarea:focus {
+  outline: none;
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 8px var(--color-secondary);
+}
+
+.btn-submit {
+  display: flex;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  background: var(--color-highlight);
+  color: var(--color-dark);
+  font-family: var(--font-title);
+  font-size: 1.125rem;
+  place-content: center;
+  gap: 8px;
+  font-weight: 500;
+  padding: 14px 0;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Animação suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-alert {
+  display: none; /* começa invisível */
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #ffe6e6; /* tom claro de vermelho */
+  color: #b30000;
+  font-weight: 500;
+  border: 1px solid #ff9999;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.form-alert.show {
+  display: block;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/*form-contact*/
+.get-in-touch-contact h2{
+  padding: 100px 0;
+  font-family: var(--font-title);
+  font-size: 4rem;
+  max-width: 940px;
+}
+
+.grid-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-contact img{
+  max-width: 475px;
+}
+
+.grid-contact div{
+  border-radius: 25px;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px 40px;
+  max-width: 640px;
+  height: auto;
+}
+
+.grid-contact div form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.grid-contact div form label{
+  color: var(--color-bg);
+  font-size: 1.125rem;
+}
+
+.grid-contact div form input{
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  height: 30px;
+  width: 100%;
+  padding: 0 10px;
+  transition: all 0.3s;
+}
+
+.grid-contact div form input:focus{
+  outline: none;
+  transform: translateY(-3px);
+  transform: scale(1.03);
+}
+
+.grid-contact div form textarea{
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  height: 200px;
+  width: 100%;
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+.grid-contact div form textarea:focus{
+  outline: none;
+  transform: scale(1.01);
+}
+
+.grid-contact div form button{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 36px;
+  width: 250px;
+  background-color: var(--color-highlight);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+  margin: 20px auto 0 auto;
+  border: none;
+}
+
+.grid-contact div form button:hover{
+  transform: translateY(-5px);
+  transform: scale(1.03);
+}
+

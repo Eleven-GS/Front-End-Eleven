@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eleven</title>
+
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/exSmall.css">
+  <link rel="stylesheet" href="./css/smallDevices.css">
+  <link rel="stylesheet" href="./css/mediumDevices.css">
+  <link rel="stylesheet" href="./css/largeDevices.css">
+</head>
+
+<body>
+  <header class="header-primary">
+    <img src="./assets/svg/logoEleven 1.svg" alt="logo eleven" class="logo">
+
+    <button id="menu-hamburguer" class="menu-toggle" aria-expanded="false" aria-controls="menu-principal" type="button">
+      <img src="./assets/svg/hamburguer-color.svg" alt="Abrir menu">
+    </button>
+
+    <nav aria-label="primaria" id="nav">
+      <ul>
+        <li><a href="index.html" class="active">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+        <li><a href="faq.html">Faq</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <div>
+        <a href="" id="login">Login <img src="./assets/svg/login.svg"></a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <main class="top-hero-contact" aria-label="descubra-sua-trilha">
+      <h1>Quer descobrir seu caminho? Fale com a gente.</h1>
+      <p>Preencha o formulário e conte um pouco sobre você — vamos te ajudar a entender qual área combina mais com seu perfil e seus objetivos.</p>
+    </main>
+
+    <article class="quiz">
+      <form id="quiz-form" method="POST">
+        <!-- Pergunta 1 -->
+        <fieldset class="quiz-item">
+          <legend>1. O que mais te motiva quando pensa no futuro profissional?</legend>
+          <p class="label-select">Selecione uma ou mais opções <img src="./assets/svg/button-faq.svg"></p>
+          <div class="options">
+            <label><input type="checkbox" name="motivacao" value="tecnologia"> Criar coisas novas e resolver problemas com tecnologia</label>
+            <label><input type="checkbox" name="motivacao" value="impacto_social"> Ajudar pessoas e causar impacto social</label>
+            <label><input type="checkbox" name="motivacao" value="criatividade"> Trabalhar com criatividade e comunicação</label>
+            <label><input type="checkbox" name="motivacao" value="grandes_empresas"> Fazer parte de grandes empresas e crescer profissionalmente</label>
+            <label><input type="checkbox" name="motivacao" value="empreender"> Empreender e criar meu próprio caminho</label>
+          </div>
+        </fieldset>
+
+        <!-- Pergunta 2 -->
+        <fieldset class="quiz-item">
+          <legend>2. Quando você se imagina trabalhando, o que mais combina com você?</legend>
+          <p class="label-select">Selecione uma ou mais opções <img src="./assets/svg/button-faq.svg"></p>
+          <div class="options">
+            <label><input type="checkbox" name="perfil_trabalho" value="desafios_logicos"> Resolver desafios técnicos e lógicos</label>
+            <label><input type="checkbox" name="perfil_trabalho" value="trabalho_em_equipe"> Trabalhar em equipe e trocar ideias</label>
+            <label><input type="checkbox" name="perfil_trabalho" value="experiencias"> Projetar, desenhar e criar experiências</label>
+            <label><input type="checkbox" name="perfil_trabalho" value="lideranca"> Liderar projetos e planejar estratégias</label>
+            <label><input type="checkbox" name="perfil_trabalho" value="novas_tecnologias"> Experimentar novas tecnologias e tendências</label>
+          </div>
+        </fieldset>
+
+        <!-- Pergunta 3 -->
+        <fieldset class="quiz-item">
+          <legend>3. Qual dessas áreas você sente mais curiosidade em entender?</legend>
+          <p class="label-select">Selecione uma ou mais opções <img src="./assets/svg/button-faq.svg"></p>
+          <div class="options">
+            <label><input type="checkbox" name="areas" value="tecnologia"> Tecnologia e programação</label>
+            <label><input type="checkbox" name="areas" value="design"> Design e experiência do usuário</label>
+            <label><input type="checkbox" name="areas" value="sustentabilidade"> Sustentabilidade e energia limpa</label>
+            <label><input type="checkbox" name="areas" value="negocios"> Negócios e inovação</label>
+            <label><input type="checkbox" name="areas" value="educacao"> Educação e desenvolvimento humano</label>
+            <label><input type="checkbox" name="areas" value="marketing"> Comunicação e marketing digital</label>
+          </div>
+        </fieldset>
+
+        <!-- Pergunta 4 -->
+        <fieldset class="quiz-item">
+          <legend>4. Que tipo de habilidade você acredita ter naturalmente?</legend>
+          <p class="label-select">Selecione uma ou mais opções <img src="./assets/svg/button-faq.svg"></p>
+          <div class="options">
+            <label><input type="checkbox" name="habilidades" value="logica"> Pensar de forma analítica e lógica</label>
+            <label><input type="checkbox" name="habilidades" value="criatividade"> Ser criativo e expressivo</label>
+            <label><input type="checkbox" name="habilidades" value="ajudar"> Resolver problemas e ajudar pessoas</label>
+            <label><input type="checkbox" name="habilidades" value="liderar"> Tomar decisões e liderar</label>
+            <label><input type="checkbox" name="habilidades" value="aprender_rapido"> Aprender rápido e se adaptar</label>
+          </div>
+        </fieldset>
+
+        <!-- Pergunta 5 -->
+        <fieldset class="quiz-item">
+          <legend>5. Qual impacto você gostaria de causar no mundo através do seu trabalho?</legend>
+          <p class="label-select">Selecione uma ou mais opções <img src="./assets/svg/button-faq.svg"></p>
+          <div class="options">
+            <label><input type="checkbox" name="impacto" value="facilitar_vida"> Tornar a vida das pessoas mais fácil com tecnologia</label>
+            <label><input type="checkbox" name="impacto" value="inspirar"> Criar produtos e ideias que inspirem</label>
+            <label><input type="checkbox" name="impacto" value="sustentabilidade"> Promover sustentabilidade e inclusão</label>
+            <label><input type="checkbox" name="impacto" value="crescimento"> Gerar oportunidades e crescimento econômico</label>
+            <label><input type="checkbox" name="impacto" value="educacao_trabalho"> Transformar a forma como as pessoas aprendem e trabalham</label>
+          </div>
+        </fieldset>
+
+        <!-- Pergunta 6 -->
+        <fieldset class="quiz-item">
+          <legend>6. Como você lida com mudanças e novas tecnologias?</legend>
+          <p class="label-select">Selecione uma ou mais opções <img src="./assets/svg/button-faq.svg"></p>
+          <div class="options">
+            <label><input type="checkbox" name="mudancas" value="explorar"> Adoro explorar e aprender coisas novas</label>
+            <label><input type="checkbox" name="mudancas" value="entender_primeiro"> Gosto de entender primeiro antes de me adaptar</label>
+            <label><input type="checkbox" name="mudancas" value="curiosidade_estavel"> Tenho curiosidade, mas prefiro estabilidade</label>
+            <label><input type="checkbox" name="mudancas" value="me_adapto"> Me adapto bem, mas preciso de tempo</label>
+          </div>
+        </fieldset>
+
+        <!-- Pergunta 7 -->
+        <fieldset class="quiz-item">
+          <legend>7. O que você espera do seu futuro profissional?</legend>
+          <p class="label-select">Selecione uma ou mais opções <img src="./assets/svg/button-faq.svg"></p>
+          <div class="options">
+            <label><input type="checkbox" name="futuro" value="estabilidade"> Um trabalho estável e reconhecido</label>
+            <label><input type="checkbox" name="futuro" value="liberdade"> Liberdade para criar e inovar</label>
+            <label><input type="checkbox" name="futuro" value="aprendizado"> Oportunidades de aprendizado constante</label>
+            <label><input type="checkbox" name="futuro" value="proposito"> Trabalhar com propósito e impacto</label>
+            <label><input type="checkbox" name="futuro" value="crescimento_rapido"> Crescimento rápido e boas recompensas</label>
+          </div>
+        </fieldset>
+
+        <!-- Pergunta 8 -->
+        <fieldset class="quiz-item">
+          <legend>8. Se você pudesse aprender algo novo hoje, o que seria?</legend>
+          <textarea name="aprender_novo" placeholder="Ex: Inteligência Artificial, design de games, robótica, empreendedorismo digital, etc." rows="3"></textarea>
+        </fieldset>
+
+        <!-- Pergunta 9 -->
+        <fieldset class="quiz-item">
+          <legend>9. Quais valores você considera mais importantes no trabalho?</legend>
+          <p class="label-select">Selecione uma ou mais opções <img src="./assets/svg/button-faq.svg"></p>
+          <div class="options">
+            <label><input type="checkbox" name="valores" value="inovacao"> Inovação</label>
+            <label><input type="checkbox" name="valores" value="colaboracao"> Colaboração</label>
+            <label><input type="checkbox" name="valores" value="seguranca"> Segurança</label>
+            <label><input type="checkbox" name="valores" value="liberdade"> Liberdade</label>
+            <label><input type="checkbox" name="valores" value="reconhecimento"> Reconhecimento</label>
+            <label><input type="checkbox" name="valores" value="proposito"> Propósito</label>
+          </div>
+        </fieldset>
+
+        <!-- Pergunta 10 -->
+        <fieldset class="quiz-item">
+          <legend>10. Quando você aprende algo novo, o que mais te ajuda a entender?</legend>
+          <p class="label-select">Selecione uma ou mais opções <img src="./assets/svg/button-faq.svg"></p>
+          <div class="options">
+            <label><input type="checkbox" name="aprendizado" value="praticar"> Praticar na hora</label>
+            <label><input type="checkbox" name="aprendizado" value="teoria"> Entender a teoria primeiro</label>
+            <label><input type="checkbox" name="aprendizado" value="observacao"> Aprender observando outras pessoas</label>
+            <label><input type="checkbox" name="aprendizado" value="experimentar"> Experimentar e errar até acertar</label>
+          </div>
+        </fieldset>
+
+        <div id="form-alert" class="form-alert" aria-live="polite"></div>
+        <button type="submit" class="btn-submit">Enviar respostas <img src="./assets/svg/login.svg"></button>
+      </form>
+    </article>
+
+    <section class="get-in-touch-contact">
+      <h2>Precisa de Ajuda? Entre em contato conosco!</h2>
+
+      <div class="grid-contact">
+        <img src="./assets/img/img-form-contact.png" alt="Homem jovem segurando um laptop Microsoft Surface, sentado ao ar livre em um local de cimento, usando uma jaqueta preta e calças xadrez.">
+
+        <div>
+          <form action="">
+            <label for="name">Nome Completo:</label>
+            <input type="text" id="name" name="name" required minlength="2">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required minlength="2">
+            <br>
+            <label for="assunto">Assunto:</label>
+            <textarea name="assunto" id="assunto"></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+      <img src="./assets/svg/logo_footer.svg" alt="ELEVEN">
+      <p>©Todos os direitos reservados por Eleven</p>
+    </footer>
+  <script src="./js/global.js"></script>
+</body>
+
+</html>

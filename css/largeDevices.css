@@ -701,4 +701,142 @@
     height: 28px;
     transition: transform 0.3s ease;
   }
+
+  /*Página de Contato*/
+  /*top-hero-contact*/
+  .top-hero-contact {
+    padding-bottom: 100px;
+    text-align: start;
+  }
+
+  .top-hero-contact h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .top-hero-contact p {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    font-weight: 400;
+    max-width: 850px;
+    margin: 0 auto;
+  }
+
+  /*quiz-contact*/
+   .quiz {
+    margin-top: -80px;
+  }
+
+  #quiz-form {
+    max-width: 880px;
+    padding: 50px 45px;
+    border-radius: 25px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .quiz-item {
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+  }
+
+  .quiz-item legend {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--color-dark);
+  }
+
+  .label-select {
+    display: flex;
+    gap: 20px;
+    font-size: 1.1rem;
+    flex-wrap: wrap;
+  }
+
+  .options {
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .options label {
+    font-size: 1rem;
+    padding: 12px 15px;
+    border-radius: 10px;
+  }
+
+  textarea {
+    font-size: 1.05rem;
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .btn-submit {
+    font-size: 1.2rem;
+    padding: 16px 0;
+    border-radius: 14px;
+    margin-top: 40px;
+  }
+
+  .btn-submit img {
+    width: 26px;
+    height: 26px;
+  }
+
+  /*form-contact*/
+  .get-in-touch-contact h2 {
+    padding: 90px 0;
+    font-size: 3.5rem;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .grid-contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    place-content: center;
+    gap: 40px;
+  }
+
+  .grid-contact img {
+    width: 100%;
+  }
+
+  .grid-contact div {
+    max-width: 600px;
+    width: 90%;
+    padding: 40px 50px;
+    border-radius: 25px;
+  }
+
+  .grid-contact div form {
+    gap: 15px;
+  }
+
+  .grid-contact div form label {
+    font-size: 1.125rem;
+  }
+
+  .grid-contact div form input {
+    height: 40px;
+    padding: 0 15px;
+    font-size: 1rem;
+  }
+
+  .grid-contact div form textarea {
+    height: 180px;
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .grid-contact div form button {
+    width: 250px;
+    height: 40px;
+    font-size: 1.05rem;
+    margin-top: 25px;
+  }
 }
