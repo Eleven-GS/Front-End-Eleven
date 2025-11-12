@@ -37,6 +37,11 @@
     opacity: 1;
   }
 
+  body.menu-open {
+    overflow: hidden;
+    height: 100vh;
+  }
+
   .header-primary ul {
     flex-direction: column;
     gap: 35px;
@@ -94,17 +99,17 @@
 
   /*Footer*/
 
-footer img {
-  width: 90%;
-}
+  footer img {
+    width: 90%;
+  }
 
-footer p {
-  color: var(--color-bg);
-  font-size: 1rem;
-}
+  footer p {
+    color: var(--color-bg);
+    font-size: 1rem;
+  }
 
   /*top-hero-index*/
-  #wrapper {
+  .wrapper {
     padding: 24px;
   }
 
@@ -128,11 +133,11 @@ footer p {
     transform: translateX(-50%);
     width: 250px;
     height: 250px;
-    opacity: 0.3;
+    opacity: 0.6;
   }
 
   .hero-title-index h1 {
-    font-size: 1.875rem; /* 30px */
+    font-size: 1.875rem;
     width: 100%;
     text-align: center;
   }
@@ -250,11 +255,10 @@ footer p {
     background-color: var(--color-secondary);
   }
 
-
   /* cultura organizacional */
   .culture {
     flex-direction: column;
-    height: auto; 
+    height: auto;
     padding: 20px;
     gap: 30px;
   }
@@ -279,11 +283,11 @@ footer p {
   }
 
   .summary-culture summary {
-    font-size: clamp(1.5rem, 5vw, 2rem); 
-    grid-template-columns: 28px 1fr; 
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    grid-template-columns: 28px 1fr;
     gap: 0;
     gap: 120px;
-    align-items: center; 
+    align-items: center;
     padding-bottom: 5px;
   }
 
@@ -298,7 +302,7 @@ footer p {
     height: 24px;
   }
 
-   /* Estrutura principal */
+  /* Estrutura principal */
   .mockup-index {
     margin: 100px 0;
     grid-template-columns: 1fr;
@@ -320,7 +324,7 @@ footer p {
     font-size: clamp(2rem, 7vw, 2.5rem);
   }
 
-   .list-skills-index ul {
+  .list-skills-index ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -359,13 +363,12 @@ footer p {
     background: var(--color-primary);
   }
 
-
   .list-skills-index ul li:hover {
     transform: scale(1.04);
   }
 
   /*cta-index*/
-   .cta-index {
+  .cta-index {
     padding: 50px 20px;
     border-radius: 20px;
     gap: 40px;
@@ -403,5 +406,257 @@ footer p {
   .cta-index a:hover {
     transform: scale(1.03);
     border-width: 1.5px;
+  }
+
+  /*Pág Sobre*/
+  /*Top Hero About*/
+  #wrapper-about {
+    padding: 24px;
+    padding-bottom: 0;
+  }
+
+  .top-hero-about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    padding: 40px 20px;
+    padding-bottom: 0;
+  }
+
+  .top-hero-about div {
+    max-width: 100%;
+    gap: 25px;
+  }
+
+  .top-hero-about h1 {
+    font-size: 1.875rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.3;
+  }
+
+  .top-hero-about p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .top-hero-about a {
+    width: 100%;
+    max-width: 320px;
+    font-size: 1rem;
+    padding: 10px 0;
+    border-radius: 16px;
+    margin: 0 auto;
+  }
+
+  .img-top-hero-about {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+  }
+
+  /*flask-cards-about*/
+  .flask-cards-about {
+    padding: 60px 20px;
+    gap: 60px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .flask-cards-about h2 {
+    font-size: 2rem;
+    max-width: 100%;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .flask-cards-about h2 span {
+    font-size: 2rem;
+  }
+
+  .grid-cards-about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+  }
+
+  .cards-description-about {
+    width: 100%;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .grid-cards-about img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 16px;
+  }
+
+  .cards-description-about div {
+    width: 100%;
+    max-width: 400px;
+    min-height: auto;
+    padding: 25px 20px;
+    border-radius: 18px;
+    text-align: center;
+    gap: 15px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .cards-description-about div span {
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
+
+  .cards-description-about div p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .cards-description-about div + div {
+    margin-top: 10px;
+  }
+
+  /* transição página sobre */
+  .background-about {
+    background-size: cover;
+    background-position: center;
+    margin-top: 60px;
+  }
+
+  /*história about*/
+  .emergence-about h2 {
+    width: 80%;
+    font-size: 1.75rem;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto -12px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  .emergence-about .title {
+    width: 60%;
+    font-size: 1.5rem;
+    margin: 0 auto 60px auto;
+    text-align: center;
+    border-radius: 15px;
+    padding: 15px 20px;
+    background-color: var(--color-secondary);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .cards-history-about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .cards-history-about div {
+    width: 80%;
+    height: auto;
+    padding: 25px 20px;
+    gap: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  }
+
+  .cards-history-about span {
+    font-size: 1.125rem;
+  }
+
+  .cards-history-about p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /*ODS About*/
+  .ods-about h2 {
+    font-size: 1.75rem;
+    width: 90%;
+    margin: 60px auto 40px auto;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    line-height: 1.3;
+  }
+
+  .cards-ods-about {
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .cards-ods-about img {
+    width: 200px;
+    height: auto;
+  }
+
+  /*CTA ABOUT*/
+  .cta-about {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .cta-about h3 {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: var(--color-dark);
+  }
+
+  .containers-cta-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .containers-cta-about div p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-bg);
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .containers-cta-about div:nth-child(3){
+    max-width: 100%;
+  }
+
+  .containers-cta-about div a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    max-width: 100%;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+    transition: 0.3s ease;
+  }
+
+  .containers-cta-about a:hover {
+    transform: scale(1.03);
+  }
+
+  .containers-cta-about div:nth-child(1) {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .containers-cta-about div:nth-child(2) {
+    max-width: 90%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 0;
   }
 }

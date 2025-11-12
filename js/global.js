@@ -10,20 +10,27 @@ menuBtn.addEventListener("click", () => {
 
 //Marcar página atual
 const links = document.querySelectorAll(".header-primary ul li a");
-const currentPath = window.location.pathname;
+let currentPath = window.location.pathname;
+
+if (currentPath === "/" || currentPath === "/index.html") {
+  currentPath = "/index.html";
+}
 
 links.forEach((link) => {
   const linkPath = new URL(link.href).pathname;
-  if (currentPath === linkPath) {
+
+  link.classList.remove("active");
+
+  if (currentPath.endsWith(linkPath)) {
     link.classList.add("active");
   }
 });
 
 //Abrir sumário
-const detailsList = document.querySelectorAll('.summary-culture details');
+const detailsList = document.querySelectorAll(".summary-culture details");
 
 detailsList.forEach((detail) => {
-  detail.addEventListener('toggle', () => {
+  detail.addEventListener("toggle", () => {
     if (detail.open) {
       // Fecha todos os outros details
       detailsList.forEach((otherDetail) => {

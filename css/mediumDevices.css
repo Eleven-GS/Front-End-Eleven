@@ -46,6 +46,11 @@
     opacity: 1;
   }
 
+  body.menu-open {
+    overflow: hidden;
+    height: 100vh;
+  }
+
   .header-primary ul {
     flex-direction: column;
     gap: 40px;
@@ -106,7 +111,7 @@
   }
 
   /*Top-Hero-index*/
-  #wrapper {
+  .wrapper {
     padding: 48px 60px;
   }
 
@@ -213,15 +218,15 @@
 
   .track-card-index {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 40px 30px; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 30px;
     justify-items: center;
   }
 
   .card-blue-index,
   .card-pink-index {
     width: 100%;
-    max-width: 320px; 
+    max-width: 320px;
     height: auto;
     padding: 28px;
     gap: 45px;
@@ -248,7 +253,7 @@
     background-color: var(--color-secondary);
   }
 
-   /* Cultura Organizacional */
+  /* Cultura Organizacional */
   .culture {
     flex-direction: column;
     justify-content: center;
@@ -281,9 +286,9 @@
   /* Summary com SVG alinhado */
   .summary-culture summary {
     font-size: clamp(2rem, 3vw, 2.2rem);
-    grid-template-columns: 35px 1fr;    
+    grid-template-columns: 35px 1fr;
     gap: 480px;
-    align-items: center;                
+    align-items: center;
     padding-bottom: 6px;
   }
 
@@ -375,7 +380,7 @@
   }
 
   /*CTA_INDEX*/
-   .cta-index {
+  .cta-index {
     padding: 80px 40px;
     border-radius: 30px;
     flex-direction: column;
@@ -420,5 +425,267 @@
     border: 2px solid var(--color-bg);
     background: transparent;
     color: var(--color-bg);
+  }
+
+  /*Pag Sobre*/
+  /*top-hero-about*/
+  #wrapper-about {
+    padding: 0 48px;
+  }
+
+  .top-hero-about {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    padding: 20px 30px;
+    padding-bottom: 0;
+  }
+
+  .top-hero-about div {
+    max-width: 500px;
+    gap: 30px;
+  }
+
+  .top-hero-about h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.15rem;
+    line-height: 1.4;
+  }
+
+  .top-hero-about p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    font-weight: 400;
+  }
+
+  .top-hero-about a {
+    width: 100%;
+    max-width: 380px;
+    font-size: 1.125rem;
+    padding: 12px 0;
+    border-radius: 18px;
+    margin: 0 auto;
+  }
+
+  .img-top-hero-about {
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+  }
+
+  /*flask-cards-about*/
+  .flask-cards-about {
+    padding: 100px 60px;
+    gap: 90px;
+    text-align: center;
+  }
+
+  /* Título */
+  .flask-cards-about h2 {
+    font-size: 2.8rem;
+    max-width: 85%;
+    margin: 0 auto 50px auto;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .flask-cards-about h2 span {
+    font-size: 2.8rem;
+  }
+
+  .grid-cards-about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .cards-description-about {
+    width: 100%;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .grid-cards-about img {
+    width: 100%;
+    max-width: 540px;
+    height: auto;
+    border-radius: 25px;
+  }
+
+  .cards-description-about div {
+    width: 100%;
+    max-width: 540px;
+    padding: 35px 30px;
+    border-radius: 25px;
+    gap: 20px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+  }
+
+  .cards-description-about div span {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  .cards-description-about div p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+  .cards-description-about div + div {
+    margin-top: 20px;
+  }
+
+  /* transição página sobre */
+  .background-about {
+    background-size: cover;
+    background-position: center;
+    margin-top: 90px;
+  }
+
+  /*história about*/
+   .emergence-about h2 {
+    width: 85%;
+    font-size: 2rem;
+    padding: 30px 40px;
+    border-radius: 25px;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  .emergence-about .title {
+    width: 60%;
+    font-size: 2rem;
+    margin: -25px 30px 80px auto;
+    text-align: center;
+    border-radius: 25px;
+    padding: 25px 30px;
+    background-color: var(--color-secondary);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  .cards-history-about {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+  }
+
+  .cards-history-about div {
+    width: 45%;
+    min-width: 320px;
+    height: auto;
+    padding: 30px 25px;
+    gap: 25px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+  }
+
+  .cards-history-about div:hover {
+    transform: translateY(-5px);
+  }
+
+  .cards-history-about span {
+    font-size: 1.35rem;
+  }
+
+  .cards-history-about p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+    /*ODS About*/
+    .ods-about h2 {
+    font-size: 2.25rem;
+    width: 80%;
+    margin: 100px auto 60px auto;
+    text-align: center;
+    letter-spacing: 0.15rem;
+    line-height: 1.4;
+  }
+
+  .cards-ods-about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .cards-ods-about img {
+    width: 230px;
+    height: auto;
+  }
+
+   /*CTA ABOUT*/
+  .cta-about {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .cta-about h3 {
+    font-size: 3rem;
+    line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: var(--color-dark);
+  }
+
+  .containers-cta-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .containers-cta-about div p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--color-bg);
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .containers-cta-about div:nth-child(3){
+    max-width: 100%;
+  }
+
+  .containers-cta-about div a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    max-width: 100%;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+    transition: 0.3s ease;
+  }
+
+  .containers-cta-about a:hover {
+    transform: scale(1.03);
+  }
+
+  .containers-cta-about div:nth-child(1) {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .containers-cta-about div:nth-child(2) {
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 0;
   }
 }
