@@ -139,11 +139,18 @@
 
 /*header especifico*/
 .font-bg {
-  color: var(--color-dark);
+  color: var(--color-bg);
 }
 
 .pag-about {
   border: 1px solid var(--color-dark);
+}
+
+.login-dark:hover{
+  transform: scale(1.05);
+  background-color: transparent;
+  border: 2px solid var(--color-bg);
+  color: var(--color-bg);
 }
 
 /*Footer*/
@@ -615,7 +622,8 @@ footer p {
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  padding: clamp(40px, 6vw, 80px) clamp(40px, 6vw, 80px) 0 clamp(40px, 6vw, 80px);
+  padding: clamp(40px, 6vw, 80px) clamp(40px, 6vw, 80px) 0
+    clamp(40px, 6vw, 80px);
 }
 
 .top-hero-about {
@@ -659,7 +667,7 @@ footer p {
   transition: all 0.3s ease;
 }
 
-.top-hero-about a:hover{
+.top-hero-about a:hover {
   transform: translateY(-5px);
   box-shadow: rgba(255, 255, 255, 0.15);
 }
@@ -832,32 +840,32 @@ footer p {
   box-shadow: rgba(0, 0, 0, 0.25);
 }
 
-.cards-history-about div:hover{
+.cards-history-about div:hover {
   transform: translateY(-5px);
 }
 
-.cards-history-about div:nth-child(2){
+.cards-history-about div:nth-child(2) {
   background: var(--color-highlight);
 }
 
-.cards-history-about div:nth-child(3){
+.cards-history-about div:nth-child(3) {
   background: var(--color-secondary);
 }
 
-.cards-history-about span{
+.cards-history-about span {
   color: var(--color-bg);
   font-size: 1.25rem;
   font-weight: 700;
 }
 
-.cards-history-about p{
+.cards-history-about p {
   color: var(--color-bg);
   font-size: 1.125rem;
   font-weight: 500;
 }
 
-.cards-history-about div:nth-child(2) span, 
-.cards-history-about div:nth-child(2) p{
+.cards-history-about div:nth-child(2) span,
+.cards-history-about div:nth-child(2) p {
   color: var(--color-dark);
 }
 
@@ -896,7 +904,7 @@ footer p {
   place-items: center;
 }
 
-.containers-cta-about div:nth-child(1){
+.containers-cta-about div:nth-child(1) {
   width: 766px;
   height: 230px;
   padding: 40px;
@@ -907,7 +915,7 @@ footer p {
   box-shadow: rgba(0, 0, 0, 0.18);
 }
 
-.containers-cta-about div:nth-child(2){
+.containers-cta-about div:nth-child(2) {
   width: 480px;
   height: 200px;
   padding: 40px;
@@ -920,7 +928,7 @@ footer p {
   box-shadow: rgba(0, 0, 0, 0.18);
 }
 
-.containers-cta-about div p{
+.containers-cta-about div p {
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--color-bg);
@@ -948,4 +956,83 @@ footer p {
 .containers-cta-about div a:hover {
   transform: scale(1.05);
   transform: translatey(-5px);
+}
+
+/*Página FAQ*/
+.background-dark {
+  background-color: var(--color-neutral);
+}
+
+.top-hero-faq h1 {
+  font-size: 8rem;
+  font-family: var(--font-title);
+  color: var(--color-bg);
+  text-align: center;
+}
+
+.top-hero-faq p {
+  font-size: 1.125rem;
+  color: var(--color-bg);
+  text-align: center;
+}
+
+.top-hero-faq a img{
+  display: block;
+  margin: 60px auto;
+  transition: all 0.3s ease;
+}
+
+.top-hero-faq a img:hover {
+  transform: translateY(5px);
+}
+
+/*Secção da FAQ*/
+.question-faq h2 {
+  font-size: 4rem;
+  font-family: var(--font-title);
+  text-align: center;
+  width: 640px;
+  margin: 60px auto 60px auto;
+}
+
+.container-faq {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.container-faq div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.question-faq div details {
+  border: 3px solid var(--color-highlight);
+  border-radius: 12px;
+  min-height: 100px;
+  max-width: 590px;
+  padding: 20px 40px;
+  transition: all 0.3s ease;
+  display: block;
+  align-content: center;
+  box-shadow: rgba(0, 0, 0, 0.15);
+}
+
+.question-faq div details:hover{
+  background-color: var(--color-highlight);
+  transform: scale(1.03);
+  box-shadow: rgba(0, 0, 0, 0.25);
+}
+
+.question-faq div summary{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.question-faq div summary img{
+  cursor: pointer;
 }
