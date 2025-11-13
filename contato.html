@@ -178,16 +178,18 @@
         <img src="./assets/img/img-form-contact.png" alt="Homem jovem segurando um laptop Microsoft Surface, sentado ao ar livre em um local de cimento, usando uma jaqueta preta e calças xadrez.">
 
         <div>
-          <form action="">
+          <form id="form-contact">
             <label for="name">Nome Completo:</label>
             <input type="text" id="name" name="name" required minlength="2">
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required minlength="2">
-            <br>
-            <label for="assunto">Assunto:</label>
-            <textarea name="assunto" id="assunto"></textarea>
+            <small class="error-message"></small>
 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <small class="error-message"></small>
+
+            <label for="assunto">Assunto:</label>
+            <textarea name="assunto" id="assunto" required></textarea>
+            <small class="error-message"></small>
             <button type="submit">Enviar</button>
           </form>
         </div>
@@ -196,9 +198,10 @@
   </div>
 
   <footer>
-      <img src="./assets/svg/logo_footer.svg" alt="ELEVEN">
-      <p>©Todos os direitos reservados por Eleven</p>
-    </footer>
+    <img src="./assets/svg/logo_footer.svg" alt="ELEVEN">
+    <p>©Todos os direitos reservados por Eleven</p>
+  </footer>
+
   <script src="./js/global.js"></script>
 </body>
 
