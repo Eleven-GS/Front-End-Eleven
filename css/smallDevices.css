@@ -932,4 +932,43 @@
   .rm {
     font-size: 1rem;
   }
+
+  /*LOGIN*/
+  #body-login{
+    min-height: 0;
+  }
+  
+   .container-login {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .form-box {
+    width: 100%;
+    height: 60%;
+    padding: 30px;
+  }
+
+  .container-login.active-login .form-box {
+    bottom: 40%;
+  }
+
+  .toggle-box::before {
+    top: -240%;
+    height: 280%;
+    border-radius: 25vw;
+  }
+
+  .container-login.active-login .toggle-box::before {
+    top: 60%;
+  }
+
+  .toggle-panel {
+    height: 40%;
+  }
+
+  .container-login h1 {
+    font-size: 2rem;
+  }
 }
