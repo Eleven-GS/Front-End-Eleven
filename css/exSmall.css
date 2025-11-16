@@ -991,6 +991,27 @@
     height: 42px;
     font-size: 0.9rem;
   }
+
+  /*-----------------------Plataforma Interna----------------------*/
+  /*Header*/
+  .header-plataform{
+    width: 80%;
+    justify-content: space-around;
+    display: none;
+  }
+
+  .aside-bar{
+    display: none;
+  }
+
+  .menu-mobile-plataform{
+    display: flex;
+  }
+
+  /*Corpo da página*/
+  .wrapper-plataform{
+    margin: 20px;
+  }
 }
 
 /* responsividade especifica para evitar bugs */
