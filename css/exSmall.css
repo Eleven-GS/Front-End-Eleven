@@ -939,7 +939,7 @@
   }
 
   /*Login*/
-  #body-login{
+  #body-login {
     min-height: 0;
   }
   .container-login {
@@ -994,23 +994,150 @@
 
   /*-----------------------Plataforma Interna----------------------*/
   /*Header*/
-  .header-plataform{
+  .header-plataform {
     width: 80%;
     justify-content: space-around;
     display: none;
   }
 
-  .aside-bar{
+  .aside-bar {
     display: none;
   }
 
-  .menu-mobile-plataform{
+  .menu-mobile-plataform {
     display: flex;
   }
 
   /*Corpo da página*/
-  .wrapper-plataform{
-    margin: 20px;
+  .wrapper-plataform {
+    padding: 20px 20px 90px 20px !important;
+    width: 100%;
+  }
+
+  /* Home / Dashboard */
+  .welcome-dashboard {
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    height: auto;
+    padding: 25px 20px;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .welcome-dashboard h1 {
+    font-size: 2.2rem;
+  }
+
+  .welcome-dashboard p {
+    font-size: 1rem;
+  }
+
+  .welcome-dashboard img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: -32px;
+  }
+
+  /*Trilha e Perfil*/
+  .content-dashboard {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .content-left {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .nav-dashboard {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+
+  .nav-dashboard a {
+    width: 60% !important;
+    margin: 0 auto;
+    height: 42px;
+    font-size: 1rem;
+  }
+
+  #trilha-recente {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .your-trail-dashboard a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card-trail {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .card-trail img {
+    max-width: 100%;
+    display: block;
+    place-self: center;
+  }
+
+  .curses-save {
+    width: 100%;
+  }
+
+  .card-trail h3 {
+    font-size: 1.25rem;
+  }
+
+  .progress {
+    font-size: 0.9rem;
+  }
+
+  .progress span {
+    font-size: 1.1rem;
+  }
+
+  .courses-information {
+    font-size: 0.85rem;
+  }
+
+  .perfil-dashboard {
+    width: 80%;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 40px;
+  }
+
+  .information-perfil img {
+    width: 90px;
+  }
+
+  .stats-perfil{
+    flex-wrap: wrap;
+  }
+
+  .stats-perfil span {
+    font-size: 1.5rem;
+  }
+
+  .stats-perfil img{
+    width: 100%;
+  }
+
+  .config-perfil a {
+    font-size: 1.2rem;
   }
 }
 
@@ -1023,4 +1150,3 @@
     line-height: 1.4;
   }
 }
-

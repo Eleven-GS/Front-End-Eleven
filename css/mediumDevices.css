@@ -988,22 +988,151 @@
 
   /*-----------------------Plataforma Interna----------------------*/
   /*Header*/
-  .header-plataform{
+  .header-plataform {
     width: 80%;
     justify-content: space-around;
     display: none;
   }
 
-  .aside-bar{
+  .aside-bar {
     display: none;
   }
 
-  .menu-mobile-plataform{
+  .menu-mobile-plataform {
     display: flex;
   }
 
   /*Corpo da página*/
-  .wrapper-plataform{
-    margin: 20px;
+  .wrapper-plataform {
+    padding: 20px 40px 90px 40px;
+    width: 100%;
+  }
+
+  /* Home / Dashboard */
+  .welcome-dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 35px;
+    gap: 30px;
+    height: auto;
+    text-align: left;
+  }
+
+  .welcome-dashboard h1 {
+    font-size: 3rem;
+  }
+
+  .welcome-dashboard p {
+    font-size: 1.2rem;
+    max-width: 420px;
+    line-height: 1.35;
+  }
+
+  .welcome-dashboard img {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: -46px;
+  }
+
+  /*Trilha e Perfil*/
+  .content-dashboard {
+    margin-top: 40px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .content-left {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .nav-dashboard {
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 60px;
+  }
+
+  .nav-dashboard a {
+    width: 32% !important;
+    height: 45px;
+    font-size: 1.05rem;
+  }
+
+  #trilha-recente {
+    font-size: 3rem;
+    margin-bottom: 45px;
+    text-align: left;
+  }
+
+  .your-trail-dashboard a {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+
+  /* Card */
+  .card-trail {
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    gap: 20px;
+  }
+
+  .card-trail img {
+    width: 100%;
+  }
+
+  .informantion-trail{
+    max-width: 300px;
+  }
+
+  .curses-save h3 {
+    font-size: 1.6rem;
+  }
+
+  .progress {
+    font-size: 1.05rem;
+  }
+
+  .progress span {
+    font-size: 1.3rem;
+  }
+
+  .courses-information {
+    font-size: 0.95rem;
+  }
+
+  .perfil-dashboard {
+    width: 100%;
+    max-width: 330px;
+    padding: 25px;
+    border-radius: 20px;
+    gap: 40px;
+  }
+
+  .information-perfil img {
+    width: 120px;
+  }
+
+  .stats-perfil {
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  .stats-perfil span {
+    font-size: 1.8rem;
+  }
+
+  .stats-perfil img {
+    width: 70%;
+  }
+
+  .config-perfil a {
+    font-size: 1.3rem;
   }
 }

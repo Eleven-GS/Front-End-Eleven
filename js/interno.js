@@ -2,6 +2,7 @@ const nome = localStorage.getItem("usuarioNome");
 
 if (nome) {
   document.getElementById("welcome").textContent = `Olá, ${nome}`;
+  document.getElementById("name-user-perfil").textContent = nome;
 }
 
 

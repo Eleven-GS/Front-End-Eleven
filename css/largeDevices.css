@@ -902,4 +902,104 @@
   .rm p{
     font-size: 1.125rem;
   }
+
+  /*-----------------------Plataforma Interna----------------------*/
+  /*Trilha e Perfil*/
+  .content-dashboard {
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .content-left {
+    width: 100%;
+    max-width: 820px;
+  }
+
+  .nav-dashboard {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 70px;
+  }
+
+  .nav-dashboard a {
+    width: 30% !important;
+    height: 48px;
+    font-size: 1.15rem;
+  }
+
+  #trilha-recente {
+    font-size: 4rem;
+    margin-bottom: 50px;
+    text-align: left;
+  }
+
+  .your-trail-dashboard a {
+    width: 100%;
+    display: flex;
+    gap: 25px;
+  }
+
+  .card-trail {
+    width: 100%;
+    padding: 28px;
+    height: auto;
+    gap: 25px;
+  }
+
+  .card-trail img {
+    max-width: 100%;
+  }
+
+  .informantion-trail {
+    max-width: 380px;
+  }
+
+  .curses-save h3 {
+    font-size: 1.7rem;
+  }
+
+  .progress {
+    font-size: 1.1rem;
+  }
+
+  .progress span {
+    font-size: 1.35rem;
+  }
+
+  .courses-information {
+    font-size: 1rem;
+  }
+
+  .perfil-dashboard {
+    width: 100%;
+    max-width: 840px;
+    flex-direction: row;
+    padding: 30px;
+    border-radius: 20px;
+    gap: 45px;
+  }
+
+  .information-perfil img {
+    width: 125px;
+  }
+
+  .stats-perfil {
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+
+  .stats-perfil span {
+    font-size: 1.85rem;
+  }
+
+  .stats-perfil img {
+    width: 75%;
+  }
+
+  .config-perfil a {
+    font-size: 1.35rem;
+  }
 }
