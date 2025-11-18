@@ -34,3 +34,4 @@ loginForm.addEventListener("submit", function(event) {
 
   window.location.href = "dashboard.html";
 });
+
