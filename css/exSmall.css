@@ -1125,7 +1125,7 @@
     width: 90px;
   }
 
-  .stats-perfil{
+  .stats-perfil {
     flex-wrap: wrap;
   }
 
@@ -1133,7 +1133,7 @@
     font-size: 1.5rem;
   }
 
-  .stats-perfil img{
+  .stats-perfil img {
     width: 100%;
   }
 
@@ -1142,7 +1142,7 @@
   }
 
   /*Página Minhas Trilhas*/
-   .myTrail h1 {
+  .myTrail h1 {
     font-size: 2.4rem;
     margin-bottom: 25px;
     text-align: center;
@@ -1169,7 +1169,7 @@
   }
 
   /*Tela de Curso Especifico (Web Design)*/
-  
+
   .top-hero-image img {
     width: 100%;
     height: 220px;
@@ -1249,6 +1249,38 @@
 
   .link-curses-summary {
     grid-template-columns: 1fr;
+  }
+
+  /*Página Todas Trilhas*/
+  .all-trails-page h1 {
+    font-size: 2.2rem;
+  }
+
+  .trail-subtitle {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
+  .trails-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .trail-card {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .trail-card img {
+    height: 150px;
+  }
+
+  .trail-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .trail-card p {
+    font-size: 0.85rem;
   }
 }
 

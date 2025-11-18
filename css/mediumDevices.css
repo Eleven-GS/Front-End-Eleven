@@ -1243,4 +1243,22 @@
     grid-template-columns: 1fr 1fr;
     gap: 25px;
   }
+
+  /*Página Todas Trilhas*/
+  .all-trails-page h1 {
+    font-size: 3.2rem;
+  }
+
+  .trail-subtitle {
+    font-size: 1.15rem;
+  }
+
+  .trails-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .trail-card img {
+    height: 170px;
+  }
 }

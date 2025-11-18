@@ -727,7 +727,7 @@
   }
 
   /*quiz-contact*/
-   .quiz {
+  .quiz {
     margin-top: -80px;
   }
 
@@ -849,7 +849,7 @@
 
   .integrantes {
     background-position: top center;
-    background-size: 100%; 
+    background-size: 100%;
     background-repeat: no-repeat;
   }
 
@@ -895,11 +895,11 @@
     height: 70px;
   }
 
-  .name-member span{
+  .name-member span {
     font-size: 1.5rem;
   }
 
-  .rm p{
+  .rm p {
     font-size: 1.125rem;
   }
 
@@ -1006,7 +1006,7 @@
   /*Tela de Curso Especifico (Web Design)*/
   .top-hero-image img {
     width: 100%;
-    height: 380px;      
+    height: 380px;
     object-fit: cover;
     margin-bottom: 60px;
   }
@@ -1087,7 +1087,25 @@
   }
 
   .link-curses-summary {
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
+  }
+
+  /*Página Todas Trilhas*/
+  .all-trails-page h1 {
+    font-size: 3.6rem;
+  }
+
+  .trail-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .trails-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+  }
+
+  .trail-card img {
+    height: 180px;
   }
 }
