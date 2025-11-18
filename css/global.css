@@ -1746,7 +1746,7 @@ footer p {
 
 /*Corpo da página*/
 .wrapper-plataform {
-  padding-left: 140px;
+  padding-left: 200px;
   padding-top: 100px;
   padding-right: 40px;
   padding-bottom: 100px;
@@ -1848,10 +1848,12 @@ footer p {
   padding: 20px;
   border-radius: 12px;
   transition: all 0.3s ease;
+  margin-bottom: 30px;
 }
 
 .card-trail img {
   max-width: 300px;
+  margin-right: 20px;
 }
 
 .card-trail .curses-save {
@@ -1898,7 +1900,7 @@ footer p {
   background: rgba(0, 0, 0, 0.1);
   padding: 20px;
   border-radius: 25px;
-  width: 340px;
+  width: 280px;
   justify-content: space-around;
 }
 
@@ -1920,6 +1922,10 @@ footer p {
 
 .stats-perfil span {
   font-size: 1.8rem;
+}
+
+.stats-perfil img{
+  width: 60%;
 }
 
 .config-perfil{
@@ -1945,4 +1951,165 @@ footer p {
 
 .config-perfil a:nth-child(2) {
   color: var(--color-accent);
+}
+
+/*Página Minahs Trilhas*/
+.myTrail h1 {
+  font-size: 4rem;
+  font-family: var(--font-title);
+  margin-bottom: 40px;
+}
+
+.btn-filter-trail{
+  display: flex;
+  gap: 45px;
+  margin-bottom: 40px;
+}
+
+.btn-filter-trail button {
+  background: var(--color-accent);
+  width: 125px;
+  height: 30px;
+  border-radius: 12px;
+  border: none;
+  color: var(--color-bg);
+  font-weight: 400;
+  font-size: 1.125rem;
+  transition: all 0.3s ease;
+}
+
+.btn-filter-trail button:hover{
+  transform: translateY(-5px);
+}
+
+.btn-filter-trail button:nth-child(2){
+  background: var(--color-primary);
+}
+
+.btn-filter-trail button:nth-child(3){
+  background: var(--color-secondary);
+}
+
+/*Página da Trilha de WebDesign*/
+.top-hero-image img {
+  width: 100%;
+  height: 400px;
+  display: block;
+  margin-bottom: 100px;
+}
+
+.content-trail{
+  display: grid;
+  grid-template-columns: 1fr 360px;
+}
+
+.left-content-trail {
+  max-width: 670px;
+}
+
+.left-content-trail h1 {
+  font-size: 3rem;
+  font-family: var(--font-title);
+  margin-bottom: 50px;
+}
+
+.left-content-trail summary {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.left-content-trail details::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: var(--color-accent);
+  margin: 20px 0;
+  border-radius: 12px;
+}
+
+.information-task{
+  margin-top: 40px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.task-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  background: var(--color-highlight);
+  height: 50px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3 ease;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+}
+
+.task-link:hover{
+  transform: scale(1.03) translateY(-5px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.rigth-content-trail h2{
+  font-size: 1.8rem;
+  font-family: var(--font-title);
+  margin-bottom: 50px;
+}
+
+.complete-training {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 20px 40px;
+  border-radius: 25px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
+}
+
+.complete-training span{
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.complete-training-option {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.complete-training-option img{
+  width: 60px;
+}
+
+.complete-training-option a{
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.complete-training-option p {
+  font-size: 0.7rem;
+}
+
+.link-curses-summary {
+  background: var(--color-bg);
+  padding: 20px;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.link-curses-summary .more-option{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  font-size: 0.9rem;
 }

@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
   <aside class="aside-bar">
     <div class="logo-solo">
       <img src="./assets/svg/ElevenSolo 1.svg" alt="Logo Eleven">
@@ -77,28 +76,17 @@
       </button>
     </header>
 
-    <main class="welcome-dashboard" aria-labelledby="welcome">
-      <div>
-        <h1 id="welcome"></h1>
-        <p>Pronto para continuar sua jornada de conhecimento?</p>
+    <main class="myTrail" aria-labelledby="minhas-trilhas">
+      <h1 id="minhas-trilhas">Minhas Trilhas</h1>
+
+      <div class="btn-filter-trail">
+        <button type="button">Todas</button>
+        <button type="button">Ativos</button>
+        <button type="button">Concluídos</button>
       </div>
 
-      <div>
-        <img src="./assets/img/image-dashboard.png" alt="Ilustração de uma criança usando um laptop, simbolizando aprendizado digital">
-      </div>
-    </main>
-
-    <section class="content-dashboard" aria-label="conteudo">
-      <div class="content-left">
-        <nav class="nav-dashboard" aria-label="acesso-rapido">
-          <a href="">Suas Trilhas <img src="./assets/svg/login.svg"></a>
-          <a href="">Ver outras trilhas <img src="./assets/svg/login.svg"></a>
-          <a href="">Quiz <img src="./assets/svg/login.svg"></a>
-        </nav>
-
-        <div class="your-trail-dashboard" aria-labelledby="trilha-recente">
-          <h2 id="trilha-recente">Trilha Recente</h2>
-
+      <div class="your-trail-dashboard">
+        <div>
           <a href="webdesigntrail.html">
             <div class="card-trail">
               <div>
@@ -114,25 +102,41 @@
               </div>
           </a>
         </div>
+        <div>
+          <a href="">
+            <div class="card-trail">
+              <div>
+                <img src="./assets/img/CuradorIA.png" alt="Ilustração de uma mulher analisando uma tela de computador com elementos de tecnologia, usando cores azul e branco, simbolizando inovação digital.">
+              </div>
+              <div class="informantion-trail">
+                <div class="curses-save">
+                  <h3>Curador de IA</h3>
+                  <button><img src="./assets/svg/save.svg" alt="save"></button>
+                </div>
+                <p class="progress">Seu Progresso: <span>1/12</span></p>
+                <p class="courses-information">Especialista em selecionar, ajustar e validar conteúdos gerados por IA, garantindo precisão, qualidade, coerência e alinhamento com os objetivos do produto ou da experiência do usuário.</p>
+              </div>
+          </a>
+        </div>
+
+        <div>
+          <a href="">
+            <div class="card-trail">
+              <div>
+                <img src="./assets/img/GerenteDeInovação.png" alt="Ilustração de uma mulher analisando uma tela de computador com elementos de tecnologia, usando cores azul e branco, simbolizando inovação digital.">
+              </div>
+              <div class="informantion-trail">
+                <div class="curses-save">
+                  <h3>Gerente de Inovação</h3>
+                  <button><img src="./assets/svg/save.svg" alt="save"></button>
+                </div>
+                <p class="progress">Seu Progresso: <span>1/24</span></p>
+                <p class="courses-information">Responsável por impulsionar iniciativas estratégicas de transformação, identificando oportunidades, estruturando soluções inovadoras e conduzindo projetos que aumentam competitividade e valor para o negócio.</p>
+              </div>
+          </a>
+        </div>
       </div>
-  </div>
-  <div aria-label="perfil" class="perfil-dashboard">
-    <div class="information-perfil">
-      <img src="./assets/svg/perfil.svg" alt="foto de perfil">
-      <h2 id="name-user-perfil"></h2>
-    </div>
-
-    <div class="stats-perfil">
-      <span>100px</span>
-      <img src="./assets/svg/progress.svg" alt="Simulação de barra de progresso em atividades">
-    </div>
-
-    <nav class="config-perfil">
-      <a href="">Perfil & Certificados</a>
-      <a href="">Editar Perfil</a>
-    </nav>
-  </div>
-  </section>
+    </main>
   </div>
 
   <script src="./js/interno.js"></script>

@@ -1002,4 +1002,92 @@
   .config-perfil a {
     font-size: 1.35rem;
   }
+
+  /*Tela de Curso Especifico (Web Design)*/
+  .top-hero-image img {
+    width: 100%;
+    height: 380px;      
+    object-fit: cover;
+    margin-bottom: 60px;
+  }
+
+  .content-trail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  .left-content-trail {
+    max-width: 60%;
+  }
+
+  .left-content-trail h1 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .left-content-trail summary {
+    font-size: 1.2rem;
+  }
+
+  .left-content-trail details::after {
+    height: 2px;
+    margin: 20px 0;
+  }
+
+  .information-task {
+    margin-top: 35px;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .task-link {
+    height: 55px;
+    font-size: 0.9rem;
+    gap: 10px;
+  }
+
+  .rigth-content-trail {
+    max-width: 40%;
+  }
+
+  .rigth-content-trail h2 {
+    font-size: 2.2rem;
+    margin-bottom: 45px;
+    text-align: left;
+  }
+
+  .complete-training {
+    padding: 30px;
+    border-radius: 22px;
+  }
+
+  .complete-training span {
+    font-size: 1.2rem;
+  }
+
+  .complete-training-option {
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .complete-training-option img {
+    width: 70px;
+  }
+
+  .complete-training-option a {
+    font-size: 1rem;
+  }
+
+  .complete-training-option p {
+    font-size: 0.9rem;
+  }
+
+  .link-curses-summary {
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+  }
 }
