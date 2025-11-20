@@ -1630,7 +1630,7 @@ footer p {
   height: 34px;
 }
 
-.menu-mobile-plataform button{
+.menu-mobile-plataform button {
   border: none;
   background: none;
 }
@@ -1647,7 +1647,7 @@ footer p {
   display: none;
   flex-direction: column;
   gap: 20px;
-   overflow: hidden;
+  overflow: hidden;
   z-index: 50;
 }
 
@@ -1656,7 +1656,7 @@ footer p {
   animation: fadein 0.25s ease;
 }
 
-.menu-option-mobile button{
+.menu-option-mobile button {
   background: transparent;
   border: none;
 }
@@ -1784,7 +1784,7 @@ footer p {
   justify-content: space-between;
 }
 
-.content-left{
+.content-left {
   max-width: 760px;
   width: 100%;
 }
@@ -1826,7 +1826,7 @@ footer p {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 }
 
-.your-trail-dashboard a{
+.your-trail-dashboard a {
   display: flex;
   text-decoration: none;
 }
@@ -1885,14 +1885,14 @@ footer p {
   font-size: 0.875rem;
 }
 
-.card-trail:hover{
+.card-trail:hover {
   transform: scale(1.03);
   border: 1px solid var(--color-secondary);
   box-shadow: 0 0 8px var(--color-primary);
   cursor: pointer;
 }
 
-.perfil-dashboard{
+.perfil-dashboard {
   display: flex;
   flex-direction: column;
   place-items: center;
@@ -1903,14 +1903,14 @@ footer p {
   justify-content: space-around;
 }
 
-.information-perfil img{
+.information-perfil img {
   width: 110px;
   margin-bottom: 20px;
 }
 
-  .information-perfil h2{
-    text-align: center;
-  }
+.information-perfil h2 {
+  text-align: center;
+}
 
 .stats-perfil {
   display: flex;
@@ -1923,11 +1923,11 @@ footer p {
   font-size: 1.8rem;
 }
 
-.stats-perfil img{
+.stats-perfil img {
   width: 60%;
 }
 
-.config-perfil{
+.config-perfil {
   display: flex;
   flex-direction: column;
 }
@@ -1959,7 +1959,7 @@ footer p {
   margin-bottom: 40px;
 }
 
-.btn-filter-trail{
+.btn-filter-trail {
   display: flex;
   gap: 45px;
   margin-bottom: 40px;
@@ -1977,15 +1977,15 @@ footer p {
   transition: all 0.3s ease;
 }
 
-.btn-filter-trail button:hover{
+.btn-filter-trail button:hover {
   transform: translateY(-5px);
 }
 
-.btn-filter-trail button:nth-child(2){
+.btn-filter-trail button:nth-child(2) {
   background: var(--color-primary);
 }
 
-.btn-filter-trail button:nth-child(3){
+.btn-filter-trail button:nth-child(3) {
   background: var(--color-secondary);
 }
 
@@ -1997,7 +1997,7 @@ footer p {
   margin-bottom: 100px;
 }
 
-.content-trail{
+.content-trail {
   display: grid;
   grid-template-columns: 1fr 360px;
 }
@@ -2020,7 +2020,7 @@ footer p {
   cursor: pointer;
 }
 
-.left-content-trail details::after{
+.left-content-trail details::after {
   content: "";
   display: block;
   width: 100%;
@@ -2030,13 +2030,13 @@ footer p {
   border-radius: 12px;
 }
 
-.information-task{
+.information-task {
   margin-top: 40px;
   font-size: 1.25rem;
   font-weight: 600;
 }
 
-.task-link{
+.task-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2051,12 +2051,12 @@ footer p {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
 }
 
-.task-link:hover{
+.task-link:hover {
   transform: scale(1.03) translateY(-5px);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 
-.rigth-content-trail h2{
+.rigth-content-trail h2 {
   font-size: 1.8rem;
   font-family: var(--font-title);
   margin-bottom: 50px;
@@ -2069,7 +2069,7 @@ footer p {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.08);
 }
 
-.complete-training span{
+.complete-training span {
   font-size: 1.125rem;
   font-weight: 600;
 }
@@ -2080,11 +2080,11 @@ footer p {
   margin: 10px 0;
 }
 
-.complete-training-option img{
+.complete-training-option img {
   width: 60px;
 }
 
-.complete-training-option a{
+.complete-training-option a {
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
@@ -2105,7 +2105,7 @@ footer p {
   position: relative;
 }
 
-.link-curses-summary .more-option{
+.link-curses-summary .more-option {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -2169,4 +2169,172 @@ footer p {
   border: 1px solid var(--color-accent);
   box-shadow: 0 0 12px var(--color-primary);
   cursor: pointer;
+}
+
+/*Página de Perfil*/
+.perfil-container {
+  background-image: url(../assets/img/backgroundtest.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 420px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.perfil-container div {
+  background: rgba(0, 0, 0, 0.25);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+  text-align: center;
+}
+
+.perfil-container div img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.perfil-container div h1 {
+  font-family: var(--font-title);
+  color: var(--color-bg);
+  font-size: 2.4rem;
+}
+
+.perfil-progress {
+  margin-top: 40px;
+  background: var(--color-bg);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.perfil-progress h2 {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.progress-item {
+  margin-bottom: 20px;
+}
+
+.progress-item span {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.progress-bar {
+  width: 100%;
+  background: #ddd;
+  height: 12px;
+  border-radius: 15px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.progress-bar div {
+  height: 100%;
+  background: var(--color-accent);
+  border-radius: 15px;
+}
+
+.progress-bar.small {
+  height: 8px;
+}
+
+.perfil-certificados {
+  margin-top: 60px;
+}
+
+.perfil-certificados h2 {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.cert-card {
+  background: var(--color-bg);
+  border: 2px solid var(--color-accent);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cert-card h3 {
+  font-family: var(--font-title);
+  font-size: 1.3rem;
+}
+
+.cert-card button {
+  padding: 10px 15px;
+  background: var(--color-primary);
+  color: var(--color-bg);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.cert-card button:hover {
+  transform: translateY(-3px);
+}
+
+.perfil-config {
+  margin-top: 60px;
+  background: var(--color-bg);
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+}
+
+.perfil-config h2 {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.perfil-config ul {
+  list-style: none;
+}
+
+.perfil-config li {
+  padding: 12px 0;
+  font-size: 1.05rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.perfil-config li:hover {
+  color: var(--color-accent);
+}
+
+.logout-btn {
+  margin: 60px auto 80px;
+  display: block;
+  background: var(--color-secondary);
+  color: var(--color-bg);
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: var(--color-primary);
 }

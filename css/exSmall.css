@@ -1282,6 +1282,61 @@
   .trail-card p {
     font-size: 0.85rem;
   }
+
+  /*Página de Perfil*/
+   .perfil-container {
+    height: 300px;
+    padding: 20px;
+  }
+
+  .perfil-container div {
+    padding: 25px;
+  }
+
+  .perfil-container div img {
+    width: 130px;
+  }
+
+  .perfil-container div h1 {
+    font-size: 1.7rem;
+  }
+
+  .perfil-progress {
+    padding: 25px;
+  }
+
+  .perfil-progress h2 {
+    font-size: 1.5rem;
+  }
+
+  .progress-item span {
+    font-size: 1rem;
+  }
+
+  .progress-bar {
+    height: 10px;
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-card {
+    padding: 20px;
+  }
+
+  .perfil-config {
+    padding: 25px;
+  }
+
+  .perfil-config h2 {
+    font-size: 1.6rem;
+  }
+
+  .logout-btn {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
 }
 
 /* responsividade especifica para evitar bugs */

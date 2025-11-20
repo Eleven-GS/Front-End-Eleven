@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eleven</title>
+
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/exSmall.css">
+  <link rel="stylesheet" href="./css/smallDevices.css">
+  <link rel="stylesheet" href="./css/mediumDevices.css">
+  <link rel="stylesheet" href="./css/largeDevices.css">
+</head>
+
+<body>
+  <aside class="aside-bar">
+    <div class="logo-solo">
+      <img src="./assets/svg/ElevenSolo 1.svg" alt="Logo Eleven">
+    </div>
+
+    <nav aria-label="primaria" class="nav-primary">
+      <a href="dashboard.html"><img src="./assets/svg/home.svg"></a>
+      <a href="minhasTrilhas.html"><img src="./assets/svg/trail.svg"></a>
+      <a href="todasTrilhas.html"><img src="./assets/svg/option-trail.svg"></a>
+      <a href="maisInformaçoes.html"><img src="./assets/svg/more.svg"></a>
+    </nav>
+
+    <nav aria-label="secundaria" class="nav-secondary">
+      <a href="index.html"><img src="./assets/svg/out.svg"></a>
+      <a href="perfil.html"><img src="./assets/svg/perfil.svg"></a>
+    </nav>
+  </aside>
+
+  <nav class="menu-mobile-plataform">
+    <a href="dashboard.html"><img src="./assets/svg/home.svg"></a>
+    <button type="button" id="open-menu-mobile">
+      <img src="./assets/svg/hamburguer-color.svg">
+    </button>
+    <a href="minhasTrilhas.html"><img src="./assets/svg/trail.svg"></a>
+  </nav>
+
+  <nav class="menu-option-mobile" aria-label="menu-mobile-expandido">
+    <div class="top-mobile-menu">
+      <img src="./assets/svg/ElevenSolo 1.svg" alt="Logo Eleven">
+      <button type="button" id="close-menu-mobile">
+        <img src="./assets/svg/hamburguer-color.svg">
+      </button>
+    </div>
+
+    <div class="search-mobile">
+      <input type="search" class="search" placeholder="Pesquisar">
+      <button type="button">
+        <img src="./assets/svg/flowbite_bell-active-solid.svg">
+      </button>
+    </div>
+
+    <nav aria-label="primaria" class="nav-mobile-plataform">
+      <a href="dashboard.html"><img src="./assets/svg/home.svg"></a>
+      <a href="minhasTrilhas.html"><img src="./assets/svg/trail.svg"></a>
+      <a href="todasTrilhas.html"><img src="./assets/svg/option-trail.svg"></a>
+      <a href="maisInformacoes.html"><img src="./assets/svg/more.svg"></a>
+      <a href="index.html"><img src="./assets/svg/out.svg"></a>
+      <a href="perfil.html"><img src="./assets/svg/mdi_user.svg"></a>
+    </nav>
+  </nav>
+
+  <div class="wrapper-plataform">
+    <header class="header-plataform">
+      <input type="search" class="search" placeholder="Pesquisar">
+      <button type="button">
+        <img src="./assets/svg/flowbite_bell-active-solid.svg">
+      </button>
+    </header>
+
+    <main>
+      <div class="perfil-container">
+        <div>
+          <img src="./assets/svg/perfil.svg">
+          <h1 id="name-user-perfil"></h1>
+        </div>
+      </div>
+
+      <!-- Progresso do Usuário -->
+      <section class="perfil-progress">
+        <h2>Seu Progresso</h2>
+
+        <div class="progress-item">
+          <span>Progresso Total</span>
+          <div class="progress-bar">
+            <div style="width: 8.92%"></div>
+          </div>
+        </div>
+
+        <div class="progress-item">
+          <span>Web Design</span>
+          <div class="progress-bar">
+            <div style="width: 15%"></div>
+          </div>
+        </div>
+
+        <div class="progress-item">
+          <span>Curador IA</span>
+          <div class="progress-bar">
+            <div style="width: 8.3%"></div>
+          </div>
+        </div>
+
+        <div class="progress-item">
+          <span>Gerente de Inovação</span>
+          <div class="progress-bar">
+            <div style="width: 4.16%"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certificados -->
+      <section class="perfil-certificados">
+        <h2>Certificados</h2>
+
+        <div class="cert-grid">
+          <div class="cert-card">
+            <h3>Web Design</h3>
+            <button>Baixar PDF</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Configurações -->
+      <section class="perfil-config">
+        <h2>Configurações</h2>
+        <ul>
+          <li>Alterar Senha</li>
+          <li>Notificações</li>
+          <li>Privacidade</li>
+          <li>Tema (Claro/Escuro)</li>
+        </ul>
+      </section>
+
+      <!-- Logout -->
+      <button class="logout-btn">Sair da Conta</button>
+    </main>
+
+  </div>
+
+  <script src="./js/interno.js"></script>
+</body>
+
+</html>

@@ -1108,4 +1108,29 @@
   .trail-card img {
     height: 180px;
   }
+
+  /*Página de Perfil*/
+  .perfil-container {
+    height: 400px;
+  }
+
+  .perfil-container div img {
+    width: 190px;
+  }
+
+  .perfil-container div h1 {
+    font-size: 2.3rem;
+  }
+
+  .perfil-progress {
+    padding: 40px;
+  }
+
+  .cert-grid {
+    grid-template-columns: repeat(3, minmax(240px, 1fr));
+  }
+
+  .perfil-config {
+    padding: 35px;
+  }
 }
