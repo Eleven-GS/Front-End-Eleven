@@ -1218,6 +1218,93 @@ footer p {
   }
 }
 
+/*Resposta API*/
+.result-section {
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 20px;
+  display: none;
+  animation: fadeIn .4s ease-in-out;
+}
+
+.result-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.short-summary {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.tracks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* CARD */
+.track-card {
+  padding: 20px;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+  border: 1px solid #eee;
+}
+
+.track-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.track-name {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.match-score {
+  background: #4F46E5;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.track-summary {
+  margin: 12px 0;
+  font-size: 15px;
+  color: #555;
+}
+
+.track-reason {
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+.track-steps-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.track-steps {
+  padding-left: 20px;
+}
+
+.track-steps li {
+  color: #444;
+  font-size: 14px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 /*form-contact*/
 .get-in-touch-contact h2 {
   padding: 100px 0;

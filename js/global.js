@@ -53,55 +53,133 @@ document.querySelectorAll(".label-select").forEach((label) => {
 //validação do quiz
 document
   .getElementById("quiz-form")
-  .addEventListener("submit", function (event) {
-    const perguntas = document.querySelectorAll("fieldset");
+  .addEventListener("submit", async function (event) {
+    event.preventDefault();
+
     const alertBox = document.getElementById("form-alert");
+
+    // 1. Capturar dados do formulário
+    function getCheckedValues(name) {
+      return Array.from(
+        document.querySelectorAll(`input[name="${name}"]:checked`)
+      ).map((input) => input.value);
+    }
+
+    const payload = {
+      motivacao: getCheckedValues("motivacao"),
+      perfil_trabalho: getCheckedValues("perfil_trabalho"),
+      areas: getCheckedValues("areas"),
+      habilidades: getCheckedValues("habilidades"),
+      impacto: getCheckedValues("impacto"),
+      mudancas: getCheckedValues("mudancas"),
+      futuro: getCheckedValues("futuro"),
+      aprender_novo: document
+        .querySelector('textarea[name="aprender_novo"]')
+        .value.trim(),
+      valores: getCheckedValues("valores"),
+      aprendizado: getCheckedValues("aprendizado"),
+    };
+
+    // 2. Validação
+    const perguntas = document.querySelectorAll("fieldset");
     let valido = true;
 
     perguntas.forEach((pergunta) => {
       const checkboxes = pergunta.querySelectorAll('input[type="checkbox"]');
-      const radios = pergunta.querySelectorAll('input[type="radio"]');
       const textarea = pergunta.querySelector("textarea");
 
-      // Validação dos checkboxes
       if (checkboxes.length > 0) {
-        const algumMarcado = Array.from(checkboxes).some(
-          (input) => input.checked
-        );
-        if (!algumMarcado) valido = false;
+        if (!Array.from(checkboxes).some((c) => c.checked)) valido = false;
       }
 
-      // Validação dos radios
-      if (radios.length > 0) {
-        const algumMarcado = Array.from(radios).some((input) => input.checked);
-        if (!algumMarcado) valido = false;
-      }
-
-      // Validação do textarea
-      if (textarea && textarea.value.trim() === "") {
-        valido = false;
-      }
+      if (textarea && textarea.value.trim() === "") valido = false;
     });
 
     if (!valido) {
-      event.preventDefault();
       alertBox.textContent =
         "Por favor, responda todas as perguntas antes de enviar.";
       alertBox.classList.add("show");
+      return;
+    }
 
-      // Remove a mensagem após 4 segundos
-      setTimeout(() => {
-        alertBox.classList.remove("show");
-      }, 4000);
-    } else {
-      // exibir uma mensagem de sucesso
-      alertBox.textContent = "Enviado com sucesso!";
-      alertBox.style.backgroundColor = "#e6ffe6";
-      alertBox.style.color = "#006600";
-      alertBox.style.borderColor = "#66cc66";
+    // 3. Chamada ao back-end
+    alertBox.textContent = "Enviando suas respostas...";
+    alertBox.classList.add("show");
+
+    try {
+      const response = await fetch("https://quiz-eleven.onrender.com/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      console.log("Status da resposta:", response.status);
+
+      const rawResult = await response.json();
+      console.log("Conteúdo do rawResult:", rawResult);
+
+      // ✅ Extrair JSON de dentro de raw_text
+      let data;
+      try {
+        const cleaned = rawResult.raw_text.replace(/```json|```/g, "").trim();
+        data = JSON.parse(cleaned);
+      } catch (err) {
+        console.error("Erro ao interpretar raw_text:", err);
+        document.getElementById("quiz-result-content").innerHTML =
+          "<p>Não foi possível gerar recomendações.</p>";
+        return;
+      }
+
+      renderQuizResult(data);
+
+      alertBox.textContent = "Resultado gerado com sucesso.";
+      alertBox.classList.add("show");
+    } catch (err) {
+      console.error("Erro no fetch:", err);
+      alertBox.textContent = "Erro de comunicação com o servidor.";
       alertBox.classList.add("show");
     }
   });
+
+function renderQuizResult(data) {
+  const section = document.getElementById("quiz-result");
+  const content = document.getElementById("quiz-result-content");
+  const summary = document.getElementById("short-summary");
+
+  section.style.display = "block";
+  content.innerHTML = "";
+  summary.textContent = data.short_summary || "";
+
+  if (!data.tracks || data.tracks.length === 0) {
+    content.innerHTML = "<p>Não foi possível gerar recomendações.</p>";
+    return;
+  }
+
+  data.tracks.forEach((track) => {
+    const card = document.createElement("div");
+    card.className = "track-card";
+
+    card.innerHTML = `
+      <div class="track-header">
+        <h3 class="track-name">${track.name}</h3>
+        <span class="match-score">${Math.round(track.match_score * 100)}%</span>
+      </div>
+
+      <p class="track-summary">${track.summary}</p>
+
+      <p class="track-reason"><strong>Por que você combina:</strong> ${
+        track.reason
+      }</p>
+
+      <p class="track-steps-title">Primeiros passos:</p>
+      <ul class="track-steps">
+        ${track.first_steps.map((step) => `<li>${step}</li>`).join("")}
+      </ul>
+    `;
+
+    content.appendChild(card);
+  });
+}
 
 //validação form de contato
 document
