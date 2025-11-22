@@ -88,9 +88,8 @@ document
       const checkboxes = pergunta.querySelectorAll('input[type="checkbox"]');
       const textarea = pergunta.querySelector("textarea");
 
-      if (checkboxes.length > 0) {
-        if (!Array.from(checkboxes).some((c) => c.checked)) valido = false;
-      }
+      if (checkboxes.length > 0 && !Array.from(checkboxes).some((c) => c.checked))
+        valido = false;
 
       if (textarea && textarea.value.trim() === "") valido = false;
     });
@@ -118,16 +117,21 @@ document
       const rawResult = await response.json();
       console.log("Conteúdo do rawResult:", rawResult);
 
-      // ✅ Extrair JSON de dentro de raw_text
+      // ✅ Tentar extrair JSON do raw_text, se existir
       let data;
-      try {
-        const cleaned = rawResult.raw_text.replace(/```json|```/g, "").trim();
-        data = JSON.parse(cleaned);
-      } catch (err) {
-        console.error("Erro ao interpretar raw_text:", err);
-        document.getElementById("quiz-result-content").innerHTML =
-          "<p>Não foi possível gerar recomendações.</p>";
-        return;
+      if (rawResult.raw_text) {
+        try {
+          const cleaned = rawResult.raw_text.replace(/```json|```/g, "").trim();
+          data = JSON.parse(cleaned);
+        } catch (err) {
+          console.warn(
+            "Falha ao parsear raw_text, usando rawResult direto",
+            err
+          );
+          data = rawResult;
+        }
+      } else {
+        data = rawResult;
       }
 
       renderQuizResult(data);
@@ -156,24 +160,29 @@ function renderQuizResult(data) {
   }
 
   data.tracks.forEach((track) => {
+    const name = track.name || "Nome não disponível";
+    const summaryText = track.summary || "Resumo não disponível";
+    const reason = track.reason || "Sem justificativa";
+    const first_steps = track.first_steps || [];
+
     const card = document.createElement("div");
     card.className = "track-card";
 
     card.innerHTML = `
       <div class="track-header">
-        <h3 class="track-name">${track.name}</h3>
-        <span class="match-score">${Math.round(track.match_score * 100)}%</span>
+        <h3 class="track-name">${name}</h3>
+        <span class="match-score">${Math.round(
+          (track.match_score || 0) * 100
+        )}%</span>
       </div>
 
-      <p class="track-summary">${track.summary}</p>
+      <p class="track-summary">${summaryText}</p>
 
-      <p class="track-reason"><strong>Por que você combina:</strong> ${
-        track.reason
-      }</p>
+      <p class="track-reason"><strong>Por que você combina:</strong> ${reason}</p>
 
       <p class="track-steps-title">Primeiros passos:</p>
       <ul class="track-steps">
-        ${track.first_steps.map((step) => `<li>${step}</li>`).join("")}
+        ${first_steps.map((step) => `<li>${step}</li>`).join("")}
       </ul>
     `;
 
