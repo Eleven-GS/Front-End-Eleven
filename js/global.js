@@ -107,7 +107,7 @@ document
     alertBox.classList.add("show");
 
     try {
-      const response = await fetch("https://quiz-eleven.onrender.com/", {
+      const response = await fetch("https://quiz-eleven.onrender.com/quiz", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
