@@ -76,10 +76,10 @@ A Eleven possui uma identidade **futurista e tecnológica**, inspirada em **Cybe
 
 **Paleta de Cores:**
 
-- Primária – `#805dc2` (Roxo: inovação e tecnologia)  
-- Secundária – `#db42da` (Magenta neon: dinamismo)  
-- Acento – `#4d4add` (Botões e elementos interativos)  
-- Destaque – `#baff76` (Verde neon: atenção e clareza)  
+- Primária – `#805dc2`
+- Secundária – `#db42da`
+- Acento – `#4d4add` 
+- Destaque – `#baff76` 
 - Neutras – `#f8f9fb`, `#0e0e10`, `#2e2e30`  
 
 **Tipografia:**
