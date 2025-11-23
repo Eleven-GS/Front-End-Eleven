@@ -123,9 +123,6 @@ Projeto acadêmico vinculado à **FIAP**, desenvolvido como solução de orienta
 📹 **Vídeo Pitch:**  
 [🔗 https://youtu.be/KYXJK5jRzps?feature=shared](https://youtu.be/KYXJK5jRzps?feature=shared)
 
-📌 **Trello (Backlog e Sprints):**  
-[🔗 https://trello.com/invite/b/690e7d3e4c3ac6b2c9997349/ATTI8f56e13a7b754a1262c9c633f4961b8e7EE76C06/gs1](https://trello.com/invite/b/690e7d3e4c3ac6b2c9997349/ATTI8f56e13a7b754a1262c9c633f4961b8e7EE76C06/gs1)
-
 ---
 
 ## 🚀 Futuro da Plataforma
